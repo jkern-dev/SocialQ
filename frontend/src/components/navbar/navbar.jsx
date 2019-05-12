@@ -20,6 +20,7 @@ class NavBar extends React.Component {
         <div>
           <h1>Hello, {this.props.currentUser.username}</h1>
           <button onClick = {this.logoutUser}>Logout</button>
+          <Link to={'/new_question'}>Submit A Question</Link>
         </div>
       );
     } else {
