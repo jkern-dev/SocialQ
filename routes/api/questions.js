@@ -27,12 +27,19 @@ router.get('/:id', (req,res) => {
     .catch(err => res.status(404).json({noquestionfound: "No question found"}));
 });
 
+// get questions by type 
+router.get('/type/:type', (req,res) => {
+  Question.find({questionType: req.params.type})
+    .then(questions => res.json(questions))
+    .catch(err => res.status(404).json({noquestionsfound: "No questions found"}));
+});
+
 // create a question
 router.post('/', 
   passport.authenticate('jwt', { session: false}),
   (req,res) => {
     const { errors, isValid } = validateQuestionInput(req.body);
-    
+
     if (!isValid) {
       return res.status(400).json(errors);
     }
