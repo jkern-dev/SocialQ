@@ -39,7 +39,7 @@ class SignupForm extends React.Component {
       age: this.state.age,
       gender: this.state.gender
     };
-    this.props.signup(user, this.props.history);
+    this.props.signup(user, this.props.history.push('/login'));
   }
 
   renderErrors() {
