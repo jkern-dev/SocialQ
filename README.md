@@ -41,11 +41,28 @@ Social Q is built with the MERN stack, a combincation of MongoDB, EXPRESS, REACT
 
 # Group Members and Work Breakdown 
 
-Monday - 
-* Answers back & frontend
-* Home styling
-* User auth styling
+Group Members : Ajay, Josh, Johnson, Raphael
 
-Tuesday - 
-* Displaying results when question answered
-* Individual users answer statistics
+Sunday - 
+* Josh Kern 
+  * Initialize project and Mongo database. 
+  * Create Questions model 
+  * Create Users model 
+  * User Auth
+Monday -
+* (Names here) 
+  * Answers back & frontend
+  * Home page styling (CSS)
+  * User auth styling (CSS)
+  * Research/begin implementation of data visualization modules 
+Tuesday -
+* (Names here)
+  * Finish up CSS of various pages 
+  * Continue implementation of data visualization modules 
+  * Displaying results after question is answered
+  * User profile with user statistics 
+Wednesday 
+* All Members
+  * polish and finish up CSS and any other bugs along the way 
+  * Complete rest of production read me 
+
