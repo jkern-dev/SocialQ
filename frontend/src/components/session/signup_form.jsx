@@ -10,7 +10,7 @@ class SignupForm extends React.Component {
       password2: '',
       errors: {},
       age: '',
-      gender: ''
+      gender: 'male'
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.clearedErrors = false;
@@ -72,11 +72,10 @@ class SignupForm extends React.Component {
               placeholder = "Age"
             />
             <br />
-            <input type="text"
-              value = {this.state.gender}
-              onChange = {this.update('gender')}
-              placeholder = "Gender"
-            />
+            <select onChange={this.update('gender')}>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
             <br />
             <input type="password"
               value = {this.state.password}
