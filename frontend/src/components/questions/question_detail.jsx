@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 class QuestionDetail extends React.Component {
   constructor(props) {
@@ -11,6 +12,7 @@ class QuestionDetail extends React.Component {
       return (
         <div>
           <h2 className="wyr-head">Would You Rather</h2>
+          <Link to={`/questions/${this.props.question._id}`}>Blah blah blah</Link>
           <div>
             <h4>{this.props.question.option1}</h4>
           </div>

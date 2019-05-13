@@ -49,11 +49,11 @@ export const composeQuestion = data => dispatch => (
     .catch(err => console.log(err))
 );
 
-export const fetchQuestion = id => dispatch => {
+export const fetchQuestion = id => dispatch => (
   getUniqueQuestion(id)
     .then(question => dispatch(receiveQuestion(question)))
     .catch(err => console.log(err))
-};
+);
 
 export const updateQuestionField = data => dispatch => {
   updateQuestion(data)
