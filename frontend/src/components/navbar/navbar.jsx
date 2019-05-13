@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Splash from './splash';
 
 class NavBar extends React.Component {
 
@@ -35,13 +36,16 @@ class NavBar extends React.Component {
 
   render() {
     return (
-      <div className="navbar-container">
-        <div className="navbar-header">
-          <div className="left-navbar"></div>
-          <h1 className="app-name">Social Q's</h1>
-          { this.getLinks() }
-        </div>
-      </div> 
+      <>
+        <div className="navbar-container">
+          <div className="navbar-header">
+            <div className="left-navbar"></div>
+            <h1 className="app-name">Social Q's</h1>
+            { this.getLinks() }
+          </div>
+        </div> 
+        <Splash />
+      </>
     )
   }
 }
