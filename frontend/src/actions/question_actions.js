@@ -2,7 +2,8 @@ import {
   getQuestions,
   getUserQuestions,
   writeQuestion,
-  getUniqueQuestion
+  getUniqueQuestion, 
+  updateQuestion
 } from '../util/question_api_util';
 
 export const RECEIVE_QUESTIONS  = "RECEIVE_QUESTIONS";
@@ -53,4 +54,10 @@ export const fetchQuestion = id => dispatch => {
     .then(question => dispatch(receiveQuestion(question)))
     .catch(err => console.log(err))
 };
+
+export const updateQuestionField = data => dispatch => {
+  updateQuestion(data)
+    .then(question => dispatch(receiveQuestion(question)))
+    .catch(err => console.log(err))
+}
 

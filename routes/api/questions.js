@@ -60,7 +60,18 @@ router.post('/',
 router.patch('/:id', (req, res) => {
   Question.findById(req.params.id)
   .then(question => {
-    question.upvote += Number.parseInt(req.body.upvote);
+    if (req.body.upvote) {
+      question.upvote += Number.parseInt(req.body.upvote);
+    }
+    if (req.body.downvote) {
+      question.downvote += Number.parseInt(req.body.downvote);
+    }
+    if (req.body.answer_a) {
+      question.answer_a += Number.parseInt(req.body.answer_a);
+    }
+    if (req.body.answer_b) {
+      question.answer_b += Number.parseInt(req.body.answer_b);
+    }
     question.save()
       .then(question => res.json(question))
       .catch(err => res.status(400).json(err))
