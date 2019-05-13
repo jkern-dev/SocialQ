@@ -27,10 +27,7 @@ class Questions extends React.Component{
           <h2>All Questions</h2>
           {this.state.questions.map(question => (
             <QuestionDetail 
-              key={question._id}
-              option1={question.option1} 
-              option2={question.option2} 
-              questionType={question.questionType}
+              question = {question}
               />
           ))}
         </div>
