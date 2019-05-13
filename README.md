@@ -1,7 +1,7 @@
 # Background and Overview (Raphael)
 Not everyone is so confident with their own decisions.
-
 Not everyone fits into society as well as each of us would like. 
+
 Sometimes, what you think may be right, but sometimes it just may not be acceptable.
 Until now, after the development of "Social Q's", you had no clue that you were socially inept because no one has told you that your decisions were wrong. 
 
