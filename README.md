@@ -1,4 +1,4 @@
-# Background and Overview (Raphael)
+# Background and Overview
 Not everyone is so confident with their own decisions.
 
 Not everyone fits into society as well as each of us would like. 
@@ -27,7 +27,7 @@ Test your social ineptitude today.
 
 Social Q is built with the MERN stack, a combincation of MongoDB, EXPRESS, REACT, and NODE.
 
-# Functionality & MVP (Ajay)
+# Functionality & MVP
 * User authorization: sign up and log in
 * Question creation and display
 * Clicking on category displays a random question from that category to the user. 
@@ -37,7 +37,7 @@ Social Q is built with the MERN stack, a combincation of MongoDB, EXPRESS, REACT
 * Production README
 
 
-# Technologies and Technical Challenges (Josh)
+# Technologies and Technical Challenges
 
 # Group Members and Work Breakdown 
 
