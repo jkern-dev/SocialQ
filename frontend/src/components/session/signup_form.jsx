@@ -10,7 +10,7 @@ class SignupForm extends React.Component {
       password2: '',
       errors: {},
       age: '',
-      gender: ''
+      gender: 'male'
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.clearedErrors = false;
@@ -39,7 +39,7 @@ class SignupForm extends React.Component {
       age: this.state.age,
       gender: this.state.gender
     };
-    this.props.signup(user, this.props.history);
+    this.props.signup(user, this.props.history.push('/login'));
   }
 
   renderErrors() {
@@ -69,13 +69,13 @@ class SignupForm extends React.Component {
             <input type="number"
               value = {this.state.age}
               onChange = {this.update('age')}
+              placeholder = "Age"
             />
             <br />
-            <input type="text"
-              value = {this.state.gender}
-              onChange = {this.update('gender')}
-              placeholder = "Gender"
-            />
+            <select onChange={this.update('gender')}>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
             <br />
             <input type="password"
               value = {this.state.password}
@@ -83,7 +83,7 @@ class SignupForm extends React.Component {
               placeholder = "Password"
             />
             <br />
-            <input type = "passwprd"
+            <input type ="password"
               value = {this.state.password2}
               onChange = {this.update('password2')}
               placeholder = "Confirm Password"

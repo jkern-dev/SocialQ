@@ -7,23 +7,27 @@ class QuestionDetail extends React.Component {
   }
 
   displayQuestion() {
-    if (this.props.questionType === "wyr") {
+    if (this.props.question.questionType === "wyr") {
       return (
         <div>
           <h2>Would You Rather</h2>
           <div>
-            <h4>{this.props.option1}</h4>
+            <h4>{this.props.question.option1}</h4>
           </div>
           <div>
-            <h4>{this.props.option2}</h4>
+            <h4>{this.props.question.option2}</h4>
+          </div>
+          <div>
+            <h4>{this.props.question.option1}: {this.props.question.answer_a}</h4>
+            <h4>{this.props.question.option2}: {this.props.question.answer_b}</h4>
           </div>
         </div>
       )
-    } else if (this.props.questionType==="RFDB") {
+    } else if (this.props.question.questionType==="RFDB") {
       return (
         <div>
           <div>
-            <h2>{this.props.option1}</h2>
+            <h2>{this.props.question.option1}</h2>
           </div>
           <div>
             <h4>Red Flag</h4>
