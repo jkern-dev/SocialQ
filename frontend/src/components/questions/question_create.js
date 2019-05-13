@@ -28,13 +28,14 @@ class QuestionCreate extends React.Component {
         questionType: this.state.questionType
       };
     }
-            
+   
     this.props.composeQuestion(question);
     this.setState({
       option1: "",
       option2: "",
       questionType: ""
     });
+    this.props.history.push('/');
   }
   
   update(field) {
