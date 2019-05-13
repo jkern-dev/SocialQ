@@ -82,3 +82,18 @@
     color: #ccc;
     padding: 10px 18px;
 }
+
+.log-out{
+    text-decoration: none; 
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    font: 12px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+    align-self: left; 
+    background-color: #111;
+    border: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #ccc;
+    padding: 10px 18px;
+}
