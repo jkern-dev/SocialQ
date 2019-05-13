@@ -18,8 +18,8 @@ class QuestionDetail extends React.Component {
             <h4>{this.props.question.option2}</h4>
           </div>
           <div>
-            <h4>Upvotes: {this.props.question.upvote}</h4>
-            <h4>Downvotes: {this.props.question.downvote}</h4>
+            <h4>{this.props.question.option1}: {this.props.question.answer_a}</h4>
+            <h4>{this.props.question.option2}: {this.props.question.answer_b}</h4>
           </div>
         </div>
       )

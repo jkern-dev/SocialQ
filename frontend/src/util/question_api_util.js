@@ -8,6 +8,10 @@ export const getUserQuestions = id => {
   return axios.get(`/api/questions/user/${id}`)
 };
 
+export const getUniqueQuestion = id => {
+  return axios.get(`/api/questions/${id}`)
+};
+
 export const writeQuestion = data => {
   return axios.post('/api/questions/', data)
 };
