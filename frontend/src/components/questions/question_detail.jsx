@@ -10,7 +10,7 @@ class QuestionDetail extends React.Component {
     if (this.props.question.questionType === "wyr") {
       return (
         <div>
-          <h2>Would You Rather</h2>
+          <h2 className="wyr-head">Would You Rather</h2>
           <div>
             <h4>{this.props.question.option1}</h4>
           </div>
@@ -30,10 +30,10 @@ class QuestionDetail extends React.Component {
             <h2>{this.props.question.option1}</h2>
           </div>
           <div>
-            <h4>Red Flag</h4>
+            <h4 className="rfdb-button">Red Flag</h4>
           </div>
           <div>
-            <h4>Deal Breaker</h4>
+            <h4 className="rfdb-button">Deal Breaker</h4>
           </div>
         </div>
       )

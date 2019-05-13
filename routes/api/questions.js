@@ -57,5 +57,16 @@ router.post('/',
   }
 );
 
+router.patch('/:id', (req, res) => {
+  Question.findById(req.params.id)
+  .then(question => {
+    question.upvote += Number.parseInt(req.body.upvote);
+    question.save()
+      .then(question => res.json(question))
+      .catch(err => res.status(400).json(err))
+  }
+  )
+})
+
 
 module.exports = router;
