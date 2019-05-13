@@ -7,6 +7,7 @@ const validateQuestionInput = require('../../validation/questions');
 
 // get all questions
 router.get('/', (req,res) => {
+  debugger
   Question.find()
     .sort({date: -1})
     .then(questions => res.json(questions))
