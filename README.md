@@ -1,5 +1,5 @@
 # Background and Overview (Raphael)
-Social-Q's is a product to quiz yourself on social 
+Social-Q's is a product to quiz yourself on social ajsjadjasdj
 
 # Functionality & MVP (Ajay)
 Randomly choose questions from each category
