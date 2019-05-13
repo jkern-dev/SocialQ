@@ -57,4 +57,9 @@ router.post('/',
   }
 );
 
+// router.patch('/:id',(req,res) => {
+//   const updateQuestion = 
+// }
+// )
+
 module.exports = router;
