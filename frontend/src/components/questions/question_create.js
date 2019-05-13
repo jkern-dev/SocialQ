@@ -14,12 +14,21 @@ class QuestionCreate extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    let question = {
-      option1: this.state.option1,
-      option2: this.state.option2,
-      questionType: this.state.questionType
-    };
-
+    let question = {};
+    if (this.state.questionType === "rfdb") {
+      question = {
+        option1: this.state.option1,
+        option2: "na",
+        questionType: this.state.questionType
+      }
+    } else {
+      question = {
+        option1: this.state.option1,
+        option2: this.state.option2,
+        questionType: this.state.questionType
+      };
+    }
+            
     this.props.composeQuestion(question);
     this.setState({
       option1: "",
