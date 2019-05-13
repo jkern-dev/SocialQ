@@ -49,7 +49,7 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="login-form">
         <form onSubmit={this.handleSubmit}>
           <input type="text"
             value = {this.state.username}
