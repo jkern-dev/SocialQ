@@ -1,5 +1,20 @@
 # Background and Overview (Raphael)
-Social-Q's is a product to quiz yourself on social ajsjadjasdj
+Not everyone is so confident with their own decisions. 
+Not everyone fits into society as well as each of us would like. 
+Sometimes, what you think may be right, but sometimes it just may not be acceptable.
+Until now, after the development of "Social Q's", you had no clue that you were socially inept because no one has told you that your decisions were wrong. 
+
+Social-Q's is a product that tests your social ineptitude. 
+The questions will be simple and straightforward, and after choosing an answer, 
+a graph will show how many others think alike.
+
+Be the majority, or accept that you are socially inept. 
+Be the minority, and prove that you are an individual. 
+Yet have some common sense unless you will be a monkey.
+
+Test your social ineptitude today.
+
+Social Q is built with the MERN stack, a combincation of MongoDB, EXPRESS, REACT, and NODE.
 
 # Functionality & MVP (Ajay)
 * User authorization: sign up and log in
