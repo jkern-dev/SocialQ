@@ -26,6 +26,14 @@ const QuestionSchema = new Schema({
     type: Number,
     default: 0
   },
+  answer_a: {
+    type: Number,
+    default: 0
+  },
+  answer_b: {
+    type: Number,
+    default: 0
+  },
   date: {
     type: Date,
     default: Date.now

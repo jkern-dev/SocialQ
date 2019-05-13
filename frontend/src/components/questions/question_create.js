@@ -6,7 +6,7 @@ class QuestionCreate extends React.Component {
     this.state = {
       option1: "",
       option2: "",
-      questionType: ""
+      questionType: "wyr"
     }
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -34,27 +34,54 @@ class QuestionCreate extends React.Component {
     });
   }
 
-  render() {
-    return (
-      <div>
-        <form onSubmit = {this.handleSubmit}>
-          <input type="textarea" 
-            value = {this.state.option1}
-            onChange = {this.update("option1")}
+
+  renderInputs() {
+    if (this.state.questionType === "wyr") {
+      return (
+        <div>
+          <input type="textarea"
+            value={this.state.option1}
+            onChange={this.update("option1")}
             placeholder="Answer Choice 1"
-            />
-            <br />
+          />
+          <br />
           <input type="textarea"
             value={this.state.option2}
             onChange={this.update("option2")}
             placeholder="Answer Choice 2"
           />
-          <br />
-          <input type="text"
-            value = {this.state.questionType}
-            onChange = {this.update("questionType")}
-            placeholder = "Question Type"
+        </div>
+      )
+    } else {
+      return (
+        <div>
+          <input type="textarea"
+            value={this.state.option1}
+            onChange={this.update("option1")}
+            placeholder="Question Prompt"
           />
+          <br />
+        </div>
+      )
+    }
+  }
+
+  render() {
+
+    
+
+
+    return (
+      <div>
+        <form onSubmit = {this.handleSubmit}>
+          <label>Category: 
+            <select onChange={this.update("questionType")}>
+              <option value="wyr">Would You Rather</option>
+              <option value="rfdb">Red Flag or Deal Breaker</option>
+            </select>
+          </label>
+          <br />
+          {this.renderInputs()}
           <br />
           <input type="submit" value="Submit" />
         </form>
