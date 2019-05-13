@@ -18,6 +18,14 @@ const QuestionSchema = new Schema({
     type: String,
     required: true
   },
+  upvote: {
+    type: Number,
+    default: 0
+  },
+  downvote: {
+    type: Number,
+    default: 0
+  },
   date: {
     type: Date,
     default: Date.now
