@@ -69,6 +69,7 @@ class SignupForm extends React.Component {
             <input type="number"
               value = {this.state.age}
               onChange = {this.update('age')}
+              placeholder = "Age"
             />
             <br />
             <input type="text"
@@ -83,7 +84,7 @@ class SignupForm extends React.Component {
               placeholder = "Password"
             />
             <br />
-            <input type = "passwprd"
+            <input type ="password"
               value = {this.state.password2}
               onChange = {this.update('password2')}
               placeholder = "Confirm Password"
