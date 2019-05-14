@@ -39,7 +39,6 @@ class NavBar extends React.Component {
       <>
         <div className="navbar-container">
           <div className="navbar-header">
-            <div className="left-navbar"></div>
             <h1 className="app-name">Social Q's</h1>
             { this.getLinks() }
           </div>

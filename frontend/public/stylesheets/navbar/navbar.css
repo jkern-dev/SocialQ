@@ -40,9 +40,12 @@ body {
 .navbar-header{
     display: flex;
     width: 80%;
+    height: 100%;
     margin: 0 auto;
-    flex-direction: row;
-    align-items: center;
+    justify-content: center;
+    position: relative; 
+    text-align: center; 
+    /* text-align: center;  */
     /* flex-wrap: wrap;  */
 }
 
@@ -58,13 +61,8 @@ body {
 
 .app-name{
     color: black; 
-    display: inline-block; 
-    width: max-content; 
-    flex-basis: 100%;
-    text-align: center;
+    text-align: center; 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    /* font-weight: 100;   */
-    /* position: absolute; */
 }
 
 .left-navbar{
@@ -72,15 +70,15 @@ body {
 }
 
 .link-buttons{
-    flex: 1;
-    position: absolute;
-    right: 10%
+    position: absolute; 
+    right: 0px;
+    top: 26px; 
 }
 
 .link-buttons-logged-in{
     flex: 1;
     position: absolute;
-    right: 10%;
+    right: 200px;
     margin-bottom: 10px; 
 }
 
@@ -148,7 +146,7 @@ body {
 .question-button-container-two{
     margin-top: 69px;
     height: 600px;
-    background: white;
+    background: #E1DDDB;
     position: relative; 
     border-top: none; 
 }
