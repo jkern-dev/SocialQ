@@ -14,7 +14,7 @@ import QuestionShowContainer from './questions/question_show_container';
 import { Route } from 'react-router';
 
 const App = () => (
-  <div>
+  <div className="app-page">
     <NavBarContainer />
     <Switch>
       <Route exact path = "/signup" component = {SignUpFormContainer} />
