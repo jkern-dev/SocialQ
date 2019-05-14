@@ -17,7 +17,7 @@ body {
     bottom: 0;
     height: 800px;
     width: 100%;
-    background: #0c4a60;
+    background: #E1DDDB;
 }
 #root {
     width: 100%;
@@ -40,9 +40,12 @@ body {
 .navbar-header{
     display: flex;
     width: 80%;
+    height: 100%;
     margin: 0 auto;
-    flex-direction: row;
-    align-items: center;
+    justify-content: center;
+    position: relative; 
+    text-align: center; 
+    /* text-align: center;  */
     /* flex-wrap: wrap;  */
 }
 
@@ -58,13 +61,8 @@ body {
 
 .app-name{
     color: black; 
-    display: inline-block; 
-    width: max-content; 
-    flex-basis: 100%;
-    text-align: center;
+    text-align: center; 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    /* font-weight: 100;   */
-    /* position: absolute; */
 }
 
 .left-navbar{
@@ -72,15 +70,15 @@ body {
 }
 
 .link-buttons{
-    flex: 1;
-    position: absolute;
-    right: 10%
+    position: absolute; 
+    right: 0px;
+    top: 26px; 
 }
 
 .link-buttons-logged-in{
     flex: 1;
     position: absolute;
-    right: 10%;
+    right: 200px;
     margin-bottom: 10px; 
 }
 
@@ -134,15 +132,22 @@ body {
     width: 80%;  
     max-width: 1280px;
     margin: 0 auto;
-    background: white; 
+    background: #E1DDDB; 
 }
 
 .question-button-container{
     margin-top: 69px;
     height: 120px;
-    background: white;
+    background: #E1DDDB;
     position: relative; 
-    border: 1px solid black; 
+    border-top: none; 
+}
+
+.question-button-container-two{
+    margin-top: 69px;
+    height: 600px;
+    background: #E1DDDB;
+    position: relative; 
     border-top: none; 
 }
 
@@ -156,9 +161,25 @@ body {
     align-items: center; 
 }
 
+.button-container-two{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    margin: 0 auto;
+    align-items: center; 
+}
+
 .left-button{
     display: flex;
-    width: 52%; 
+    width: 50%; 
+    justify-content: center; 
+}
+
+.left-button-two{
+    display: flex;
+    width: 50%; 
     justify-content: center; 
 }
 
@@ -167,11 +188,18 @@ body {
     width: 50%;
     justify-content: center; 
 }
+
+.right-button-two{
+    display: flex;
+    width: 50%;
+    justify-content: center; 
+}
+
 .wyr-button{
     width: max-content;
     padding: 20px;
     background: #3bb4c1;
-    border: 1px solid white; 
+    border: 1px solid #048998; 
     border-radius: 5px;
     color: white;
     font-family: times; 
@@ -182,7 +210,26 @@ body {
     
 }
 
+.wyr-button-two{
+    width: max-content;
+    padding: 90px;
+    background: #3bb4c1;
+    border: 1px solid #048998; 
+    border-radius: 5px;
+    color: white;
+    font-family: times; 
+    font: 28px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+    text-align: center; 
+    transition: .3s;
+    cursor: pointer; 
+    
+}
+
 .wyr-button:hover{
+    background: #048998;
+}
+
+.wyr-button-two:hover{
     background: #048998;
 }
 
@@ -190,7 +237,7 @@ body {
     width: max-content;
     padding: 20px;
     background: #3bb4c1;
-    border: 1px solid white; 
+    border: 1px solid #048998;
     border-radius: 5px;
     color: white;
     font-family: times; 
@@ -200,7 +247,25 @@ body {
     cursor: pointer; 
 }
 
+.rfdb-button-two{
+    width: max-content;
+    padding: 90px;
+    background: #3bb4c1;
+    border: 1px solid #048998;
+    border-radius: 5px;
+    color: white;
+    font-family: times; 
+    font: 28px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+    text-align: center; 
+    transition: .3s;
+    cursor: pointer; 
+}
+
 .rfdb-button:hover{
+    background: #048998;
+}
+
+.rfdb-button-two:hover{
     background: #048998;
 }
 

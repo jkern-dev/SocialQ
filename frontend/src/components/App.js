@@ -12,13 +12,14 @@ import QuestionAnswerContainer from './questions/question_answers_container';
 import QuestionShowContainer from './questions/question_show_container';
 
 import { Route } from 'react-router';
+import { AuthRoute} from '../util/route_util';
 
 const App = () => (
   <div className="app-page">
     <NavBarContainer />
     <Switch>
-      <Route exact path = "/signup" component = {SignUpFormContainer} />
-      <Route exact path="/login" component={LoginFormContainer} />
+      <AuthRoute exact path = "/signup" component = {SignUpFormContainer} />
+      <AuthRoute exact path="/login" component={LoginFormContainer} />
       <Route exact path = "/questions" component={QuestionsContainer} />
       <Route exact path = "/new_question" component={QuestionCreateContainer} />
       <Route exact path = "/questions/:qid" component={QuestionShowContainer} />
