@@ -23,7 +23,7 @@ class SignupForm extends React.Component {
 
     this.setState({errors: nextProps.errors})
   }
-
+  
   update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
@@ -39,8 +39,8 @@ class SignupForm extends React.Component {
       age: this.state.age,
       gender: this.state.gender
     };
-    this.props.signup(user, this.props.history.push('/#/'));
-  }
+    this.props.signup(user);
+  } 
 
   renderErrors() {
     return (
