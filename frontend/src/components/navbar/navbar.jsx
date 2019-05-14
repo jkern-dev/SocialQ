@@ -20,8 +20,8 @@ class NavBar extends React.Component {
       return (
           <div className="link-buttons-logged-in">
               <h1 className="greeting-logged-in">Hello, {this.props.currentUser.username}</h1>
-              <button onClick = {this.logoutUser} className="log-out">Logout</button>
               <Link to={'/new_question'} className="sign-up">Submit A Question</Link>
+              <button onClick={this.logoutUser} className="log-out">Logout</button>
           </div>
       );
     } else {

@@ -20,6 +20,16 @@ class LoginForm extends React.Component {
     this.setState({errors: nextProps.errors})
   }
 
+  componentWillUpdate() {
+    this.redirectToIndex();
+  } 
+
+  redirectToIndex() {
+    if (this.props.signedIn) {
+      this.props.history.push('/')
+    }
+  }
+  
   update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
@@ -32,7 +42,7 @@ class LoginForm extends React.Component {
       username: this.state.username,
       password: this.state.password
     };
-    this.props.login(user, this.props.history.push('/#/'));
+    this.props.login(user);
   }
 
   renderErrors() {

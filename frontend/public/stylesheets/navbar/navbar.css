@@ -146,6 +146,15 @@ body {
     border-top: none; 
 }
 
+.question-button-container-two{
+    margin-top: 69px;
+    height: 600px;
+    background: white;
+    position: relative; 
+    border: 1px solid black; 
+    border-top: none; 
+}
+
 .button-container{
     height: 100%;
     width: 50%;
@@ -156,9 +165,25 @@ body {
     align-items: center; 
 }
 
+.button-container-two{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    margin: 0 auto;
+    align-items: center; 
+}
+
 .left-button{
     display: flex;
-    width: 52%; 
+    width: 50%; 
+    justify-content: center; 
+}
+
+.left-button-two{
+    display: flex;
+    width: 50%; 
     justify-content: center; 
 }
 
@@ -167,6 +192,13 @@ body {
     width: 50%;
     justify-content: center; 
 }
+
+.right-button-two{
+    display: flex;
+    width: 50%;
+    justify-content: center; 
+}
+
 .wyr-button{
     width: max-content;
     padding: 20px;
@@ -182,7 +214,26 @@ body {
     
 }
 
+.wyr-button-two{
+    width: max-content;
+    padding: 90px;
+    background: #3bb4c1;
+    border: 1px solid white; 
+    border-radius: 5px;
+    color: white;
+    font-family: times; 
+    font: 28px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+    text-align: center; 
+    transition: .3s;
+    cursor: pointer; 
+    
+}
+
 .wyr-button:hover{
+    background: #048998;
+}
+
+.wyr-button-two:hover{
     background: #048998;
 }
 
@@ -200,7 +251,25 @@ body {
     cursor: pointer; 
 }
 
+.rfdb-button-two{
+    width: max-content;
+    padding: 90px;
+    background: #3bb4c1;
+    border: 1px solid white; 
+    border-radius: 5px;
+    color: white;
+    font-family: times; 
+    font: 28px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+    text-align: center; 
+    transition: .3s;
+    cursor: pointer; 
+}
+
 .rfdb-button:hover{
+    background: #048998;
+}
+
+.rfdb-button-two:hover{
     background: #048998;
 }
 
