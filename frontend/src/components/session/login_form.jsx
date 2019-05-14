@@ -32,14 +32,14 @@ class LoginForm extends React.Component {
       username: this.state.username,
       password: this.state.password
     };
-    this.props.login(user, this.props.history.push('/'));
+    this.props.login(user, this.props.history.push('/#/'));
   }
 
   renderErrors() {
     return (
       <ul>
         {Object.keys(this.state.errors).map((error,i) => (
-          <li key={`error-${i}`}>
+          <li key={`error-${i}`} className="errors">
             {this.state.errors[error]}
           </li>
         ))}
@@ -49,23 +49,29 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-      <div className="login-form">
-        <form onSubmit={this.handleSubmit}>
+      <div className="signup-form-container">
+      <div className="signup-form">
+          <h2 className="signup-header">Sign In</h2>
+        <form onSubmit={this.handleSubmit} className="session-form">
           <input type="text"
             value = {this.state.username}
             onChange = {this.update("username")}
             placeholder="Username"
+            id="login-username"
           />
           <br />
           <input type="password"
             value = {this.state.password}
             onChange = {this.update("password")}
             placeholder = "Password"
+            id="login-password"
           />
           <br />
-          <input type = "submit" value = "Log In" />
+          <input type = "submit" value = "Log In" className="signup-button"/>
           {this.renderErrors()}
         </form>
+        <p className="signup-text">New to Social Q's? <a href="/#/signup" className="signup-link">Create an Account</a></p>
+      </div>
       </div>
     );
   }
