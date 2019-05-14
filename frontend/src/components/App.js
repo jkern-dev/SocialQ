@@ -13,7 +13,7 @@ import QuestionAnswerContainer from './questions/question_answers_container';
 import { Route } from 'react-router';
 
 const App = () => (
-  <div>
+  <div className="app-page">
     <NavBarContainer />
     <Switch>
       <Route exact path = "/signup" component = {SignUpFormContainer} />
