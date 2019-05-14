@@ -20,12 +20,12 @@ class QuestionAnswer extends React.Component {
       datasets: [{
         data: [`${this.props.question.answer_a}`, `${this.props.question.answer_b}`],
         backgroundColor: [
-          '#FF6384',
-          '#36A2EB'
+          '#EF6C33',
+          '#ABDFF1'
         ],
         hoverBackgroundColor: [
-          '#FF6384',
-          '#36A2EB'
+          '#EF6C33',
+          '#ABDFF1'
         ]
       }]
     };

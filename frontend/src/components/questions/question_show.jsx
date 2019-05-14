@@ -19,17 +19,22 @@ class QuestionShow extends React.Component {
 
     componentDidMount(){
         this.props.fetchQuestion(this.props.match.params.qid)
-        
-        .then(({question}) => {
-            this.setState({
-            upvote: question.data.upvote,
-            downvote: question.data.downvote, 
-            answer_a: question.data.answer_a, 
-            answer_b: question.data.answer_b
-        })})
+          .then(({question}) => {
+              this.setState({
+              upvote: question.data.upvote,
+              downvote: question.data.downvote, 
+              answer_a: question.data.answer_a, 
+              answer_b: question.data.answer_b
+          })})
     }
 
-    componentWillUpdate() {
+    componentDidUpdate() {
+      if (
+          this.props.question.answer_a !== this.state.answer_a ||
+          this.props.question.answer_b !== this.state.answer_b ||
+          this.props.question.upvote !== this.state.upvote ||
+          this.props.question.downvote !== this.state.downvote 
+        ) {
         this.props.fetchQuestion(this.props.match.params.qid)
             .then(({ question }) => {
                 this.setState({
@@ -39,8 +44,9 @@ class QuestionShow extends React.Component {
                     answer_b: question.data.answer_b
                 })
             })
-
+          }
     }
+
 
     handleUpvote(e){
         e.preventDefault();
