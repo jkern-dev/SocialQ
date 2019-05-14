@@ -5,7 +5,7 @@ a {
     
 a:-webkit-any-link {
     text-decoration: none;
-    color: black;
+    color: none;
 }
 
 .showbackground {
@@ -99,12 +99,14 @@ a:-webkit-any-link {
 
 .allQuestions {
     display: flex;
+    margin: 40px 0px 0px;
     justify-content: center;
     align-self: center;
     font-size: 50px;
     background: #064A60;
     color: white;
     width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 }
 
@@ -125,6 +127,7 @@ a:-webkit-any-link {
     display: flex;
     flex-direction: column;
     align-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .question-index {

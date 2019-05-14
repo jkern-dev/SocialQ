@@ -25,7 +25,7 @@ class Splash extends React.Component {
             </div>
               <div className={(this.props.location.pathname === "/") ? "right-button-two" : "right-button"}>
                 <div onClick={this.requestQ("rfdb")} className={(this.props.location.pathname === "/") ? "rfdb-button-two" : "rfdb-button"}>
-                Red Flag or <br/> Dealbreaker?
+                  Red Flag <br /> or <br/> Dealbreaker?
             </div>
             </div>
           </div>

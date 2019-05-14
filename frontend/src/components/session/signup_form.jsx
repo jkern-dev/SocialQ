@@ -97,7 +97,7 @@ class SignupForm extends React.Component {
             <br />
             <input type="submit" value = "Sign Up" className="signup-button"/>
             {this.renderErrors()}
-            <p className="signup-text">Alredy have an account? <a href="/#/login" className="signup-link">Sign In</a></p>
+            <p className="signup-text">Already have an account? <a href="/#/login" className="signup-link">Sign In</a></p>
         </form>
       </div>
       </div>

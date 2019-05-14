@@ -1,4 +1,3 @@
-
 body {
     top: 0;
     left: 0;
@@ -159,6 +158,7 @@ body {
     justify-content: center; 
     margin: 0 auto;
     align-items: center; 
+    padding: 15px
 }
 
 .button-container-two{
@@ -198,30 +198,37 @@ body {
 .wyr-button{
     width: max-content;
     padding: 20px;
+    margin: 10px;
     background: #3bb4c1;
     border: 1px solid #048998; 
     border-radius: 5px;
     color: white;
-    font-family: times; 
-    font: 14px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
     text-align: center; 
     transition: .3s;
     cursor: pointer; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     
 }
 
 .wyr-button-two{
     width: max-content;
-    padding: 90px;
+    padding: 80px 47px;
     background: #3bb4c1;
     border: 1px solid #048998; 
     border-radius: 5px;
     color: white;
-    font-family: times; 
-    font: 28px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+    font-weight: bold;
+    /* font-family: times;  */
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 55px; 
+    /* "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif; */
     text-align: center; 
     transition: .3s;
     cursor: pointer; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 }
 
@@ -235,30 +242,34 @@ body {
 
 .rfdb-button{
     width: max-content;
-    padding: 20px;
+    padding: 5px 13px;
+    margin: 10px;
     background: #3bb4c1;
     border: 1px solid #048998;
     border-radius: 5px;
     color: white;
-    font-family: times; 
-    font: 14px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
     text-align: center; 
     transition: .3s;
     cursor: pointer; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .rfdb-button-two{
     width: max-content;
-    padding: 90px;
+    padding: 25px 22px;
     background: #3bb4c1;
     border: 1px solid #048998;
     border-radius: 5px;
     color: white;
-    font-family: times; 
-    font: 28px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+    font-size: 55px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
     text-align: center; 
     transition: .3s;
     cursor: pointer; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .rfdb-button:hover{
