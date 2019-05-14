@@ -80,7 +80,7 @@ class QuestionShow extends React.Component {
                 <div className="question-container">
                     <div className="container-header-parent">
                         <div className="container-header">
-                            <div className="wyr-head">Would You Rather</div>
+                            <div className="wyr-head">Would You Rather ? </div>
                             <div className="upvoteDownvote">
                                 <div className="upvote-button" onClick={this.handleUpvote}>
                                     <i className="likeEmote far fa-grin-hearts"></i> {this.props.question.upvote} <br/>
@@ -91,11 +91,13 @@ class QuestionShow extends React.Component {
                             </div>
                         </div>
                         <div>
-                            <div className="answer-button" onClick={this.handleOption1}>
-                                {this.props.question.option1}
-                            </div>
-                            <div className="answer-button" onClick={this.handleOption2}>
-                                {this.props.question.option2}
+                            <div className="answers">
+                                <div className="answer-button" onClick={this.handleOption1}>
+                                    A: {this.props.question.option1}
+                                </div>
+                                <div className="answer-button" onClick={this.handleOption2}>
+                                    B: {this.props.question.option2}
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -4,19 +4,26 @@
 }
 .container-header-parent {
     width: 100%;
+    font-size: 50px;
 }
 .question-container {
     background-color: #ABDFF1;
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: 80%;
     height: 50%;
     padding: 20px;
     object-fit: cover;
+    border-radius: 4px;
 }
 
 .wyr-head {
-    color: black;
+    color: #064A60;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 10px;
+
+
 }
 
 .container-header {
@@ -27,10 +34,19 @@
 .upvoteDownvote {
     display: flex;
     justify-content: space-between;
+    align-self: center;
 }
 
 .upvote-button {
     font-size: 30px;
+    padding: 10px;
+    color: #064A60;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.upvote-button:hover {
+    color: rgba(255, 0, 0, 0.657);
 }
 .likeEmote {
     font-size: 40px;
@@ -38,7 +54,37 @@
 
 .downvote-button {
     font-size: 30px;
+    padding: 10px;
+    color: #064A60;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.downvote-button:hover {
+    color: rgb(95, 95, 95);
 }
 .dislikeEmote {
     font-size: 40px;
 }
+
+.answers {
+    justify-content: center;
+    padding: 50px;
+}
+
+.answer-button {
+    padding: 30px;
+    margin: 20px;
+    font-size: 20px;
+    border: 4px solid white;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: #EF6C33;
+    color: white;
+}
+
+.answer-button:hover {
+    background-color: pink;
+    color: #EF6C33;
+}
+
