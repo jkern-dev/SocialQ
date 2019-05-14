@@ -48,14 +48,14 @@ class QuestionCreate extends React.Component {
   renderInputs() {
     if (this.state.questionType === "wyr") {
       return (
-        <div>
-          <input type="textarea"
+        <div className="question-create-field">
+          <input className="question-create-form-input" type="textarea"
             value={this.state.option1}
             onChange={this.update("option1")}
             placeholder="Answer Choice 1"
           />
           <br />
-          <input type="textarea"
+          <input className="question-create-form-input" type="textarea"
             value={this.state.option2}
             onChange={this.update("option2")}
             placeholder="Answer Choice 2"
@@ -64,8 +64,8 @@ class QuestionCreate extends React.Component {
       )
     } else {
       return (
-        <div>
-          <input type="textarea"
+        <div className="question-create-field">
+          <input className="question-create-form-input" type="textarea"
             value={this.state.option1}
             onChange={this.update("option1")}
             placeholder="Question Prompt"
@@ -77,23 +77,21 @@ class QuestionCreate extends React.Component {
   }
 
   render() {
-
-    
-
-
     return (
-      <div>
-        <form onSubmit = {this.handleSubmit}>
-          <label>Category: 
-            <select onChange={this.update("questionType")}>
-              <option value="wyr">Would You Rather</option>
-              <option value="rfdb">Red Flag or Deal Breaker</option>
-            </select>
-          </label>
-          <br />
-          {this.renderInputs()}
-          <br />
-          <input type="submit" value="Submit" />
+      <div className="question-create-container">
+        <form className="question-create-form" onSubmit={this.handleSubmit}>
+          <div className="question-create-field">
+            
+              <select className="question-create-dropdown" onChange={this.update("questionType")}>
+                <option value="wyr">Would You Rather</option>
+                <option value="rfdb">Red Flag or Deal Breaker</option>
+              </select>
+           
+            <br />
+            {this.renderInputs()}
+            <br />
+            <input className="question-create-submit" type="submit" value="Submit" />
+          </div>
         </form>
       </div>
     )
