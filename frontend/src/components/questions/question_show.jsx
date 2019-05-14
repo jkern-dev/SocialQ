@@ -33,36 +33,47 @@ class QuestionShow extends React.Component {
         })})
     }
 
+    componentWillUpdate() {
+        this.props.fetchQuestion(this.props.match.params.qid)
+            .then(({ question }) => {
+                this.setState({
+                    upvote: question.data.upvote,
+                    downvote: question.data.downvote,
+                    answer_a: question.data.answer_a,
+                    answer_b: question.data.answer_b
+                })
+            })
+
+    }
+
     handleUpvote(e){
         e.preventDefault();
-        this.setState({
-            upvote: (this.state.upvote + 1)
-        })
-        this.props.updateQuestion(this.state)
+        let new_question = Object.assign({}, this.state)
+        new_question.upvote += 1
+        this.props.updateQuestion(new_question)
     }
 
     handleDownvote(e){
         e.preventDefault();
-        this.setState({
-            downvote: (this.state.downvote + 1)
-        })
-        this.props.updateQuestion(this.state)
+        let new_question = Object.assign({}, this.state)
+        new_question.downvote += 1
+        this.props.updateQuestion(new_question)
     }
 
     handleOption1(e){
         e.preventDefault();
-        this.setState({
-            answer_a: (this.state.answer_a + 1)
-        })
-        this.props.updateQuestion(this.state)
+        let new_question = Object.assign({}, this.state)
+        new_question.answer_a += 1
+        this.props.updateQuestion(new_question)
+            .then(() => this.props.history.push(`/questions/results/${this.props.question._id}`))
     }
 
     handleOption2(e){
         e.preventDefault();
-        this.setState({
-            answer_b: (this.state.answer_b + 1)
-        })
-        this.props.updateQuestion(this.state)
+        let new_question = Object.assign({}, this.state)
+        new_question.answer_b += 1
+        this.props.updateQuestion(new_question)
+            .then(() => this.props.history.push(`/questions/results/${this.props.question._id}`))
     }
 
 

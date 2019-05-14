@@ -56,7 +56,7 @@ export const fetchQuestion = id => dispatch => (
 );
 
 export const updateQuestionField = data => dispatch => {
-  updateQuestion(data)
+  return updateQuestion(data)
     .then(question => dispatch(receiveQuestion(question)))
     .catch(err => console.log(err))
 }
