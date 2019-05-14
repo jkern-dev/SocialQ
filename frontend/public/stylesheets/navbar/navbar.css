@@ -17,7 +17,7 @@ body {
     bottom: 0;
     height: 800px;
     width: 100%;
-    background: black;
+    background: #E1DDDB;
 }
 #root {
     width: 100%;
@@ -134,15 +134,14 @@ body {
     width: 80%;  
     max-width: 1280px;
     margin: 0 auto;
-    background: white; 
+    background: #E1DDDB; 
 }
 
 .question-button-container{
     margin-top: 69px;
     height: 120px;
-    background: white;
+    background: #E1DDDB;
     position: relative; 
-    border: 1px solid black; 
     border-top: none; 
 }
 
@@ -151,7 +150,6 @@ body {
     height: 600px;
     background: white;
     position: relative; 
-    border: 1px solid black; 
     border-top: none; 
 }
 
@@ -203,7 +201,7 @@ body {
     width: max-content;
     padding: 20px;
     background: #3bb4c1;
-    border: 1px solid white; 
+    border: 1px solid #048998; 
     border-radius: 5px;
     color: white;
     font-family: times; 
@@ -218,7 +216,7 @@ body {
     width: max-content;
     padding: 90px;
     background: #3bb4c1;
-    border: 1px solid white; 
+    border: 1px solid #048998; 
     border-radius: 5px;
     color: white;
     font-family: times; 
@@ -241,7 +239,7 @@ body {
     width: max-content;
     padding: 20px;
     background: #3bb4c1;
-    border: 1px solid white; 
+    border: 1px solid #048998;
     border-radius: 5px;
     color: white;
     font-family: times; 
@@ -255,7 +253,7 @@ body {
     width: max-content;
     padding: 90px;
     background: #3bb4c1;
-    border: 1px solid white; 
+    border: 1px solid #048998;
     border-radius: 5px;
     color: white;
     font-family: times; 

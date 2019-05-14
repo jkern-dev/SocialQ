@@ -2,7 +2,6 @@ import React from 'react';
 import {withRouter} from 'react-router-dom'
 
 class Splash extends React.Component {
-
   requestQ(type) {
     // this.props.history.push(`/#/questions/${type}`)
   }
