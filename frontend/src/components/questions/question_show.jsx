@@ -4,12 +4,8 @@ import {Link} from 'react-router-dom';
 class QuestionShow extends React.Component {
     constructor(props){
         super(props);
-        // this.state = {
-        //     upvote: this.props.question.upvote, 
-        //     downvote: this.props.question.downvote 
-        // }
         this.state = {
-            upvote: this.props.question.upvote ,
+            upvote: this.props.question.upvote,
             downvote: this.props.question.downvote, 
             answer_a: this.props.question.answer_a,
             answer_b: this.props.question.answer_b,
@@ -80,29 +76,34 @@ class QuestionShow extends React.Component {
     displayQuestion() {
         if (this.props.question.questionType === "wyr") {
             return (
+                <div className="showbackground">
                 <div className="question-container">
-                    <h2 className="wyr-head">Would You Rather</h2>
-                    <Link to={`/questions/${this.props.question._id}`}>Blah blah blah</Link>
-                    <div className="answer-button" onClick={this.handleOption1}>
-                        <h4>{this.props.question.option1}</h4>
+                    <div className="container-header-parent">
+                        <div className="container-header">
+                            <div className="wyr-head">Would You Rather</div>
+                            <div className="upvoteDownvote">
+                                <div className="upvote-button" onClick={this.handleUpvote}>
+                                    <i className="likeEmote far fa-grin-hearts"></i> {this.props.question.upvote} <br/>
+                                </div>
+                                <div className="downvote-button" onClick={this.handleDownvote}>
+                                    <i className="dislikeEmote far fa-flushed"></i> {this.props.question.downvote}
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="answer-button" onClick={this.handleOption1}>
+                                {this.props.question.option1}
+                            </div>
+                            <div className="answer-button" onClick={this.handleOption2}>
+                                {this.props.question.option2}
+                            </div>
+                        </div>
                     </div>
-                    <div className="answer-button" onClick={this.handleOption2}>
-                        <h4>{this.props.question.option2}</h4>
-                    </div>
-
-                    <div className="upvote-button" onClick={this.handleUpvote}>
-                        Upvote HERE
-                    </div>
-
-                    <div className="downvote-button" onClick={this.handleDownvote}>
-                        DOWNVOTE HERE
                     </div>
 
                     <div>
-                        <h4>{this.props.question.option1}: {this.props.question.answer_a}</h4>
-                        <h4>{this.props.question.option2}: {this.props.question.answer_b}</h4>
-                            upvote: {this.props.question.upvote} <br/>
-                            downvote: {this.props.question.downvote}
+                        {/* <h4>{this.props.question.option1}: {this.props.question.answer_a}</h4>
+                        <h4>{this.props.question.option2}: {this.props.question.answer_b}</h4> */}
                     </div>
                 </div>
             )

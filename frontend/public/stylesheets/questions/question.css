@@ -1,7 +1,44 @@
+.showbackground {
+    display: flex;
+    justify-content: center;
+}
+.container-header-parent {
+    width: 100%;
+}
 .question-container {
-    background-color: aqua;
+    background-color: #ABDFF1;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 50%;
+    padding: 20px;
+    object-fit: cover;
 }
 
 .wyr-head {
     color: black;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 2;
+}
+.upvoteDownvote {
+    display: flex;
+    justify-content: space-between;
+}
+
+.upvote-button {
+    font-size: 30px;
+}
+.likeEmote {
+    font-size: 40px;
+}
+
+.downvote-button {
+    font-size: 30px;
+}
+.dislikeEmote {
+    font-size: 40px;
 }
