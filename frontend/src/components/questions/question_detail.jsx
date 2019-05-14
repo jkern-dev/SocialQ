@@ -25,7 +25,7 @@ class QuestionDetail extends React.Component {
           </div>
         </div>
       )
-    } else if (this.props.question.questionType==="RFDB") {
+    } else if (this.props.question.questionType==="rfdb") {
       return (
         <div>
           <div>

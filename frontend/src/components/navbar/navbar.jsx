@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Splash from './splash';
 
 class NavBar extends React.Component {
 
@@ -17,28 +18,34 @@ class NavBar extends React.Component {
   getLinks() {
     if (this.props.loggedIn) {
       return (
-        <div>
-          <h1>Hello, {this.props.currentUser.username}</h1>
-          <button onClick = {this.logoutUser}>Logout</button>
-          <Link to={'/new_question'}>Submit A Question</Link>
-        </div>
+          <div>
+            <h1>Hello, {this.props.currentUser.username}</h1>
+            <button onClick = {this.logoutUser}>Logout</button>
+            <Link to={'/new_question'}>Submit A Question</Link>
+          </div>
       );
     } else {
       return (
-        <div>
-          <Link to={'/signup'}>Sign Up</Link>
-          <Link to={'/login'}>Log In</Link>
-        </div>
+          <div className="link-buttons">
+            <Link to={'/signup'} className="sign-up">Sign Up</Link>
+            <Link to={'/login'} className="log-in">Log In</Link>
+          </div>
       );
     }
   }
 
   render() {
     return (
-      <div>
-        <Link to="/"><h1>Social Q's</h1></Link>
-        { this.getLinks() }
-      </div>
+      <>
+        <div className="navbar-container">
+          <div className="navbar-header">
+            <div className="left-navbar"></div>
+            <h1 className="app-name">Social Q's</h1>
+            { this.getLinks() }
+          </div>
+        </div> 
+        <Splash />
+      </>
     )
   }
 }
