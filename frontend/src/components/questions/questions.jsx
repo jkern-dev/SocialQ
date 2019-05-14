@@ -15,7 +15,7 @@ class Questions extends React.Component{
   }
 
   componentWillReceiveProps(newState) {
-    this.setState({questions:newState.questions});
+    this.setState({questions: newState.questions});
   }
 
   render(){
