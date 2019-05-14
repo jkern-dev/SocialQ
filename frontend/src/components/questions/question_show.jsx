@@ -102,11 +102,6 @@ class QuestionShow extends React.Component {
                         </div>
                     </div>
                     </div>
-
-                    <div>
-                        {/* <h4>{this.props.question.option1}: {this.props.question.answer_a}</h4>
-                        <h4>{this.props.question.option2}: {this.props.question.answer_b}</h4> */}
-                    </div>
                 </div>
             )
         } else if (this.props.question.questionType === "RFDB") {

@@ -15,9 +15,9 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 800px;
+    height: 100%;
     width: 100%;
-    background: #0c4a60;
+    background: #E1DDDB;
 }
 #root {
     width: 100%;

@@ -1,3 +1,13 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+    
+a:-webkit-any-link {
+    text-decoration: none;
+    color: black;
+}
+
 .showbackground {
     display: flex;
     justify-content: center;
@@ -22,7 +32,6 @@
     font-weight: bold;
     border-radius: 4px;
     padding: 10px;
-
 
 }
 
@@ -88,3 +97,76 @@
     color: #EF6C33;
 }
 
+.allQuestions {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 50px;
+    background: #064A60;
+    color: white;
+    width: 80%;
+    
+}
+
+.questionLink {
+      width: 100%;
+    object-fit: fill;
+    align-self: center;
+}
+.questionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.question-container-index {
+    padding: 20px;
+    background-color: #EF6C33;
+    margin: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.question-index {
+    align-self: center;
+    display: flex;
+    font-size: 20px;
+}
+
+.upvoteDownvoteOnIndex {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.upvoteIndex {
+    font-size: 30px;
+    padding: 10px;
+    color: #064A60;
+    font-weight: bold;
+    display: flex;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.likeEmoteIndex {
+    font-size: 40px;
+    padding: 0px 10px;
+}
+
+.downvoteIndex {
+    font-size: 30px;
+    padding: 10px;
+    color: #064A60;
+    font-weight: bold;
+    display: flex;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.dislikeEmoteIndex {
+    font-size: 40px;
+    padding: 0px 10px;
+}
+
+.questionComponent {
+    padding: 5px;
+    font-size: 25px;
+}
