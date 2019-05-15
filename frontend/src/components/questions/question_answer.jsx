@@ -8,7 +8,24 @@ class QuestionAnswer extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchQuestion(this.props.match.params.qid);
+    this.props.fetchQuestion(this.props.match.params.qid)
+      .then(({question}) => {
+        this.setState({
+          question: question.data
+        })
+      })
+  }
+
+  componentDidUpdate() {
+    if (this.state.question === undefined) {
+      this.props
+        .fetchQuestion(this.props.match.params.qid)
+        .then(({ question }) => {
+          this.setState({
+            question: question.data
+          });
+        });
+    }
   }
 
   render() {
@@ -29,13 +46,19 @@ class QuestionAnswer extends React.Component {
         ]
       }]
     };
-    return (
-      <>
-        <Doughnut data={data} />
-      </>
-    )
-  }
 
+    if (this.state.question === undefined ) return null;
+    return (
+    <> 
+      <Doughnut data={data}
+        width={100}
+        height={100}
+        legend = {{display: true, labels: {fontSize: 18}}}
+        options={{ maintainAspectRatio: false }}
+      />
+    </>
+  )
+}
 }
 
 export default QuestionAnswer;
