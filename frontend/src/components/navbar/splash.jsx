@@ -27,11 +27,13 @@ class Splash extends React.Component {
             </div>
               
               <div className={(this.props.location.pathname === "/") ? "right-button-two" : "right-button"}>
+
                 <Link to="/questions/type/rfdb">
                   <div className={(this.props.location.pathname === "/") ? "rfdb-button-two" : "rfdb-button"}>
                     Red Flag or <br/> Dealbreaker?
                   </div>
                 </Link>
+
             </div>
           </div>
         </div>

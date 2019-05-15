@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import QuestionDetail from './question_detail';
 
 class Questions extends React.Component{
@@ -23,12 +23,14 @@ class Questions extends React.Component{
       return (<div>There are no questions</div>)
     } else {
       return (
-        <div>
-          <h2>All Questions</h2>
+        <div className="questionContainer">
+          <div className="allQuestions"> All Questions </div>
           {this.state.questions.map(question => (
+            <Link className="questionLink" to={`/questions/${question._id}`}>
             <QuestionDetail 
               question = {question}
               />
+            </Link>
           ))}
         </div>
       );

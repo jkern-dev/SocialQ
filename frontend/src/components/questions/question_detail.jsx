@@ -10,18 +10,21 @@ class QuestionDetail extends React.Component {
   displayQuestion() {
     if (this.props.question.questionType === "wyr") {
       return (
-        <div>
-          <h2 className="wyr-head">Would You Rather</h2>
-          <Link to={`/questions/${this.props.question._id}`}>Blah blah blah</Link>
-          <div>
-            <h4>{this.props.question.option1}</h4>
+        <div className="question-container-index">
+          <div className="question-index">
+            <div className="questionComponent">
+              Would you rather: {this.props.question.option1} or {this.props.question.option2}
+            </div>
           </div>
-          <div>
-            <h4>{this.props.question.option2}</h4>
-          </div>
-          <div>
-            <h4>{this.props.question.option1}: {this.props.question.answer_a}</h4>
-            <h4>{this.props.question.option2}: {this.props.question.answer_b}</h4>
+          <div className="upvoteDownvoteOnIndex">
+            <div className="upvoteIndex">
+              <i className="likeEmoteIndex far fa-grin-hearts"></i>:  {this.props.question.upvote}
+              
+            </div>
+            <div className="downvoteIndex">
+              <i className="dislikeEmoteIndex far fa-flushed"></i>:   {this.props.question.downvote}
+               
+            </div>
           </div>
         </div>
       )
