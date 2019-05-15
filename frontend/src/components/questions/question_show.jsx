@@ -109,17 +109,29 @@ class QuestionShow extends React.Component {
                     </div>
                 </div>
             )
-        } else if (this.props.question.questionType === "RFDB") {
+        } else if (this.props.question.questionType === "rfdb") {
             return (
-                <div>
-                    <div>
-                        <h2>{this.props.question.option1}</h2>
-                    </div>
-                    <div>
-                        <h4 className="rfdb-button">Red Flag</h4>
-                    </div>
-                    <div>
-                        <h4 className="rfdb-button">Deal Breaker</h4>
+                <div className="showbackground">
+                    <div className="question-container">
+                        <div className="container-header-parent">
+                            <div className="container-header">
+                                <div className="wyr-head">{this.props.question.option1} </div>
+                                    <div className="upvoteDownvote">
+                                        <div className="upvote-button" onClick={this.handleUpvote}>
+                                            <i className="likeEmote far fa-grin-hearts"></i> {this.props.question.upvote} <br />
+                                        </div>
+                                        <div className="downvote-button" onClick={this.handleDownvote}>
+                                            <i className="dislikeEmote far fa-flushed"></i> {this.props.question.downvote}
+                                        </div>
+                                    </div>
+                            </div>
+                            <div>
+                                <div className="answers">
+                                    <div className="answer-button">Red Flag</div>
+                                    <div className="answer-button">Deal Breaker</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             )
