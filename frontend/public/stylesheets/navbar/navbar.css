@@ -61,10 +61,10 @@ body {
 
 .app-name{
     color: black; 
-    text-align: center; 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 40px;
     font-weight: bold;
+    margin: 0 auto; 
 }
 
 .left-navbar{
@@ -73,15 +73,14 @@ body {
 
 .link-buttons{
     position: absolute; 
-    right: 0px;
-    top: 26px; 
+    right: 100px;
+    top: 30px; 
 }
 
 .link-buttons-logged-in{
-    margin: 10px; 
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+    position: absolute; 
+    right: 100px;
+    bottom: 20px; 
 }
 
 .sign-up{
@@ -92,16 +91,15 @@ body {
     text-align: left;
     font: 12px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif; 
     background-color: #EF6C33; 
-    border: 1px solid white;
     border-radius: 5px;
     color: white;
     padding: 10px 18px;
     margin-right: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sign-up:hover {
-    background-color: #ccc;
-    color: #EF6C33;
+    background-color: #ff8533;
 }
 
 .log-in{
@@ -113,38 +111,33 @@ body {
     align-self: left; 
     background-color: #EF6C33;
     border: none;
-    border: 1px solid white;
     border-radius: 5px;
     color: white;
     padding: 10px 16px;
-
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
 }
 
 .log-in:hover {
-    background-color: #ccc;
-    color: #EF6C33;
+    background-color: #ff8533;
 }
 
 
 .log-out{
-    text-decoration: none; 
+     text-decoration: none; 
     width: 140px;
-    height: 100%;
     line-height: 30px;
     font: 12px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
     align-self: left; 
     background-color: #EF6C33;
     border: none;
-    border: 1px solid white;
     border-radius: 5px;
     color: white;
-    padding: 10px 18px;
-    /* float: right;  */
+    padding: 10px 16px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
 }
 
 .log-out:hover {
-    background-color: #ccc;
-    color: #EF6C33;
+     background-color: #ff8533;
 }
 .question-button-background{
     width: 80%;  
@@ -300,9 +293,8 @@ body {
 }
 
 .greeting-logged-in{
-    font-size: 30px;
+    font-size: 14px;
     font-weight: bold;
     margin: 0;
     align-self: center;
-    padding: 20px;
 }
