@@ -152,6 +152,7 @@ body {
     background: #abdff1;
     position: relative; 
     border-top: none; 
+    margin-bottom: 50px;
 }
 
 .question-button-container-two{
@@ -254,7 +255,7 @@ body {
 
 .rfdb-button{
     width: max-content;
-    padding: 5px 13px;
+    padding: 20px 13px;
     margin: 10px;
     background: #3bb4c1;
     border: 1px solid #048998;
