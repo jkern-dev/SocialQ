@@ -15,6 +15,14 @@ import QuestionTypesContainer from './questions/question_types_container';
 import { Route } from 'react-router';
 import { AuthRoute, ProtectedRoute} from '../util/route_util';
 
+const path = require('path');
+if (process.env.NODE_ENV === 'production') {
+  applicationCache.use(express.static('frontend/build'));
+  applicationCache.get('/', (req,res) => {
+    res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
+  })
+}
+
 const App = () => (
   <div className="app-page">
     <NavBarContainer />
