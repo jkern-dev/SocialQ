@@ -16,7 +16,7 @@ body {
     bottom: 0;
     height: 100%;
     width: 100%;
-    background: #E1DDDB;
+    background: #abdff1
 }
 #root {
     width: 100%;
@@ -149,7 +149,7 @@ body {
 .question-button-container{
     margin-top: 69px;
     height: 120px;
-    background: #E1DDDB;
+    background: #abdff1;
     position: relative; 
     border-top: none; 
 }
@@ -157,7 +157,7 @@ body {
 .question-button-container-two{
     margin-top: 69px;
     height: 600px;
-    background: #E1DDDB;
+    background: #abdff1;
     position: relative; 
     border-top: none; 
 }
