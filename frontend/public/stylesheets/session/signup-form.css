@@ -1,5 +1,5 @@
 body {
-    background-color: #e1dddb;
+    background-color: #abdff1;
 }
 
 .signup-form-container{
@@ -10,7 +10,7 @@ body {
     /* justify-content: center;  */
     margin: 0 auto; 
     margin-top: 69px;
-    background: #E1DDDB; 
+    background: #abdff1; 
 }
 
 .signup-header{
@@ -107,8 +107,7 @@ body {
 }
 
 .signup-button:hover {
-    background-color: #ccc;
-    color: #EF6C33;
+    background-color: #ff8533;
 }
 
 .signup-text{
