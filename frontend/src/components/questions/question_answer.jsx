@@ -31,7 +31,6 @@ class QuestionAnswer extends React.Component {
     };
     return (
       <>
-        <h1>Hello</h1>
         <Doughnut data={data} />
       </>
     )
