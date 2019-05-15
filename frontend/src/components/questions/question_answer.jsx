@@ -50,7 +50,6 @@ class QuestionAnswer extends React.Component {
     if (this.state.question === undefined ) return null;
     return (
     <> 
-      <h1>Hello</h1>
       <Doughnut data={data}
         width={100}
         height={100}

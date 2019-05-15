@@ -30,17 +30,25 @@ class QuestionDetail extends React.Component {
       )
     } else if (this.props.question.questionType==="rfdb") {
       return (
-        <div>
-          <div>
-            <h2>{this.props.question.option1}</h2>
-          </div>
-          <div>
-            <h4 className="rfdb-button">Red Flag</h4>
-          </div>
-          <div>
-            <h4 className="rfdb-button">Deal Breaker</h4>
+        <div className="question-container-index">
+        <div className="question-index">
+          <div className="questionComponent">
+              Red Flag? Deal Breaker? {this.props.question.option1}
           </div>
         </div>
+          <div className="upvoteDownvoteOnIndex">
+            <div className="upvoteIndex">
+              <i className="likeEmoteIndex far fa-grin-hearts"></i>:  {this.props.question.upvote}
+
+            </div>
+            <div className="downvoteIndex">
+              <i className="dislikeEmoteIndex far fa-flushed"></i>:   {this.props.question.downvote}
+
+            </div>
+          </div>
+        </div>
+          // <div className="rfdb-button">Red Flag</div>
+          // <div className="rfdb-button">Deal Breaker</div>
       )
     }
   }
