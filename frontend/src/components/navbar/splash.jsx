@@ -1,9 +1,9 @@
 import React from 'react';
-import {withRouter} from 'react-router-dom'
+import {withRouter, Link} from 'react-router-dom'
 
 class Splash extends React.Component {
   requestQ(type) {
-    // this.props.history.push(`/#/questions/${type}`)
+    // this.props.history.push(`/questions/type/${type}`)
   }
 
   render() {
@@ -19,14 +19,21 @@ class Splash extends React.Component {
           <div className={(this.props.location.pathname === "/") ? "question-button-container-two" : "question-button-container"}>
             <div className={(this.props.location.pathname === "/") ? "button-container-two" : "button-container"}>
               <div className={(this.props.location.pathname === "/") ? "left-button-two" : "left-button"}> 
-              <div onClick={this.requestQ("wyr")} className={(this.props.location.pathname === "/") ? "wyr-button-two" : "wyr-button"}>
-                Would You <br/> Rather?
-              </div>
+              <Link to="/questions/type/wyr">
+                <div className={(this.props.location.pathname === "/") ? "wyr-button-two" : "wyr-button"}>
+                  Would You <br/> Rather?
+                </div>
+              </Link>
             </div>
+              
               <div className={(this.props.location.pathname === "/") ? "right-button-two" : "right-button"}>
-                <div onClick={this.requestQ("rfdb")} className={(this.props.location.pathname === "/") ? "rfdb-button-two" : "rfdb-button"}>
-                  Red Flag <br /> or <br/> Dealbreaker?
-            </div>
+
+                <Link to="/questions/type/rfdb">
+                  <div className={(this.props.location.pathname === "/") ? "rfdb-button-two" : "rfdb-button"}>
+                    Red Flag or <br/> Dealbreaker?
+                  </div>
+                </Link>
+
             </div>
           </div>
         </div>
@@ -36,11 +43,9 @@ class Splash extends React.Component {
     };
 
     return(
-
       (this.props.location.pathname === "/login" || this.props.location.pathname === "/signup") ?
       sessionPage() : notSessionPage()
     )
-
   }
 };
 
