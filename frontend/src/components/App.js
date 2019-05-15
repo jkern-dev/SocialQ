@@ -10,6 +10,7 @@ import QuestionCreateContainer from './questions/question_create_container';
 import QuestionsContainer from './questions/questions_container';
 import QuestionAnswerContainer from './questions/question_answers_container';
 import QuestionShowContainer from './questions/question_show_container';
+import QuestionTypesContainer from './questions/question_types_container';
 
 import { Route } from 'react-router';
 import { AuthRoute, ProtectedRoute} from '../util/route_util';
@@ -24,6 +25,7 @@ const App = () => (
       <Route exact path = "/questions" component={QuestionsContainer} />
       <Route exact path = "/new_question" component={QuestionCreateContainer} />
       <Route exact path = "/questions/:qid" component={QuestionShowContainer} />
+      <Route exact path = "/questions/type/:type" component={QuestionTypesContainer} />
       <Route exact path = "/questions/results/:qid" component={QuestionAnswerContainer} />
     </Switch>
   </div>
